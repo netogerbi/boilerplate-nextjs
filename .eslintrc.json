@@ -27,6 +27,6 @@
     "react/prop-types": "error", // it's on in the course
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "error", // it's on in the course
-    "@typescript-eslint/no-unused-vars": "error"
+    "@typescript-eslint/no-unused-vars": "warn"
   }
 }
