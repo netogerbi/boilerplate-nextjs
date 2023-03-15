@@ -1,15 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Head from 'next/head';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export interface HomeProps {
   title: string;
 }
 
 export default function Home({
-  title = "NextJS Avacado",
+  title = 'NextJS Avacado',
 }: HomeProps): JSX.Element {
   return (
     <>
@@ -19,8 +19,8 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={"main"}>
-        <div className={"description"}>
+      <main className={'main'}>
+        <div className={'description'}>
           <h1>{title}</h1>
           <div>
             <a
@@ -28,11 +28,11 @@ export default function Home({
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
+              By{' '}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className={"vercelLogo"}
+                className={'vercelLogo'}
                 width={100}
                 height={24}
                 priority
@@ -41,16 +41,16 @@ export default function Home({
           </div>
         </div>
 
-        <div className={"center"}>
+        <div className={'center'}>
           <Image
-            className={"logo"}
+            className={'logo'}
             src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
             priority
           />
-          <div className={"thirteen"}>
+          <div className={'thirteen'}>
             <Image
               src="/thirteen.svg"
               alt="13"
@@ -61,10 +61,10 @@ export default function Home({
           </div>
         </div>
 
-        <div className={"grid"}>
+        <div className={'grid'}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={"card"}
+            className={'card'}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -78,7 +78,7 @@ export default function Home({
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={"card"}
+            className={'card'}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,7 +92,7 @@ export default function Home({
 
           <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={"card"}
+            className={'card'}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -106,7 +106,7 @@ export default function Home({
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={"card"}
+            className={'card'}
             target="_blank"
             rel="noopener noreferrer"
           >
