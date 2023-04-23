@@ -1,6 +1,6 @@
 {
   "src/**/*": [
     "npm run lint --fix",
-    "npm run test --findRelatedTests --bail"
+    "npm run test --passWithNoTests --findRelatedTests 'src/**/*' --bail"
   ]
 }
