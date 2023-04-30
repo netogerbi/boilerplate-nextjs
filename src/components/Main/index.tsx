@@ -1,16 +1,22 @@
 import * as S from './styles';
 
-const Main = (): JSX.Element => {
+export type MainProps = {
+  title?: string;
+  description?: string;
+};
+
+const Main = ({
+  title = 'React Avançado',
+  description = 'Typescript, ReactJs, NextJS e Styled Components',
+}: MainProps): JSX.Element => {
   return (
     <S.Wrapper>
       <S.Logo
         src="/img/logo.svg"
         alt="Imagem de um átomo e React avançado escrito ao lado."
       />
-      <S.Title>React Avançado</S.Title>
-      <S.Description>
-        Typescript, ReactJs, NextJS e Styled Components
-      </S.Description>
+      <S.Title>{title}</S.Title>
+      <S.Description>{description}</S.Description>
       <S.Illustration
         src="/img/hero-illustration.svg"
         alt="Um desenvolvedor de frente para uma tela com código"
