@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
         <title>Boilerplate</title>
         <link rel="shortcut icon" href="/img/icon512" />
         <link rel="apple-touch-icon" href="/img/icon512" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="boilerplate" />
       </Head>
       <GlobalStyles />
