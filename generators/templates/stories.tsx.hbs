@@ -1,0 +1,19 @@
+import { Meta, StoryObj } from '@storybook/react';
+
+import {{pascalCase name}} from '.';
+
+const meta: Meta<typeof {{pascalCase name}}> = {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}},
+  // args and argTypes can come here
+};
+
+export default meta;
+
+type Story = StoryObj<typeof {{pascalCase name}}>;
+
+// export const Basic: Story = (args): JSX.Element => <{{pascalCase name}} {...args} />;
+
+export const Primary: Story = {
+  args: {},
+};

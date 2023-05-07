@@ -11,7 +11,8 @@
     "test": "jest",
     "test:watch": "jest --watch --maxWorkers=25%",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate:component": "plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "next": "^13.3.2",
@@ -21,7 +22,6 @@
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
-    "@babel/preset-typescript": "^7.21.0",
     "@next/eslint-plugin-next": "^13.3.1",
     "@storybook/addon-essentials": "^7.0.7",
     "@storybook/addon-interactions": "^7.0.7",
@@ -40,7 +40,6 @@
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.54.1",
-    "babel-plugin-styled-components": "^2.1.1",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -52,6 +51,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.0",
+    "plop": "^3.1.2",
     "prettier": "2.8.4",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.7",
